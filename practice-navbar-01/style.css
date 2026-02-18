@@ -87,3 +87,75 @@ nav ul li a:hover {
 .button button:hover {
     transform: scale(1.1);
 }
+
+/* CONTENT */
+
+.merger-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    padding: 6rem 4rem 4rem;
+}
+
+.content {
+}
+
+.content h1 {
+    color: white;
+}
+
+.content p {
+    width: 500px;
+    color: white;
+}
+
+.button-merger {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px
+}
+
+.mulai-button {
+    padding: 20px;
+    border-radius: 6px;
+    background-color: white;
+    font-weight: 600;
+    color: rgb(250, 79, 0);
+    border-style: none; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.mulai-button:hover {
+    transform: scale(1.1);
+}
+
+.lanjut-button {
+    padding: 20px;
+    border-radius: 6px;
+    border-style: none;
+    background-color: rgb(211, 67, 1);
+    font-weight: 600;
+    color: white;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.lanjut-button:hover {
+    transform: scale(1.1);
+}
+
+.content h1 {
+    font-weight: 800;
+}
+
+
+
+
+
+
+/* IMG CONTENT */
+.img img {
+    width: 400px;
+}
