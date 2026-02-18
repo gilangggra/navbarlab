@@ -98,16 +98,19 @@ nav ul li a:hover {
     padding: 6rem 4rem 4rem;
 }
 
-.content {
-}
-
 .content h1 {
     color: white;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -1px;
 }
 
 .content p {
     width: 500px;
     color: white;
+    line-height: 1.6;
+    margin-top: 20px;
 }
 
 .button-merger {
@@ -134,8 +137,8 @@ nav ul li a:hover {
 .lanjut-button {
     padding: 20px;
     border-radius: 6px;
-    border-style: none;
-    background-color: rgb(211, 67, 1);
+    border: 2px solid white;
+    background-color: transparent;
     font-weight: 600;
     color: white;
     transition: transform 0.3s ease;
