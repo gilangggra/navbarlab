@@ -19,10 +19,9 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
-    background-color: var(--white);
-    overflow-x: hidden; /* Mencegah scroll horizontal yang tak diinginkan */
-    background: linear-gradient(135deg, #0f172a, #1e1b4b, #0a0f2c);
     min-height: 100vh;
+    background: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 25%, #fbc2eb 50%, #a1c4fd 100%);
+    overflow-x: hidden; /* Mencegah scroll horizontal yang tak diinginkan */
 }
 
 ul {
@@ -60,51 +59,106 @@ nav {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
-    border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
 
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
 }
 
-.navbar div a {
+.nav-logo a {
     display: flex;
     align-items: center;
     gap: 20px;
-    color: white;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-
-.navbar ul {
+nav ul {
     display: flex;
-    align-items: center;
     gap: 2rem;
-    color: white;
+}
+
+nav ul li {
+    color: #ffffff;
     font-weight: 600;
+    cursor: pointer;
+    padding: 8px 0;
+    transition:  all 300ms ease;
+    border-bottom: 1px solid transparent;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+nav ul li:hover {
+    color: rgba(0, 8, 255, 0.529);
+    border-bottom: 1px solid rgba(0, 8, 255, 0.529);
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
+    gap: 20px;
 }
+
+.search-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-wrapper input {
+    width: 200px;
+    padding: 10px 40px 10px 15px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: #1e293b;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-wrapper i {
+    position: absolute;
+    right: 15px;
+    color: #636e73;
+    pointer-events: none;
+}
+
+.search-wrapper input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #6c5ce7;
+    width: 210px;
+}
+
 
 
 .btn-login {
-    color: white;
-    padding: 10px;
-    
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    border: 1px solid rgb(138, 138, 138);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    color: #1e293b;
+    transition: trasnform all 0.3s ease;
+}
+
+.btn-login:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .btn-signup {
-    background-color: #1e1b4b;
-    color: white;
-    padding: 10px;
-    
+    background: rgba(0, 8, 255, 0.2);
     border-radius: 8px;
-    border: 1px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 8px;
+    color: #deebff;
+    transition: trasnform all 0.3s ease;
 }
 
+.btn-signup:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    background: rgba(0, 8, 255, 0.529);
+}
