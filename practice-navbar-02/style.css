@@ -16,7 +16,7 @@
 
 /* 3. Base Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--dark-color);
     min-height: 100vh;
